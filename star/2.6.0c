@@ -1,0 +1,10 @@
+#%Module1.0#####################################################################
+source /opt/Modules/extensions/extensions.tcl
+proc ModulesHelp { } {
+        puts stderr "\tAdds star bin directory to the path"
+}
+module-whatis    "star"
+
+set starversion 2.6.0c
+prepend-path PATH /short/sd34/ap5514/myapps/star/2.6.0c/STAR-2.6.0c/bin/Linux_x86_64_static
+

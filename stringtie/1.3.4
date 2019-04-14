@@ -1,0 +1,9 @@
+#%Module1.0#####################################################################
+source /opt/Modules/extensions/extensions.tcl
+proc ModulesHelp { } {
+        puts stderr "\tAdds stringtie bin directory to the path"
+}
+module-whatis    "stringtie"
+
+set stringtieversion 1.3.4
+prepend-path PATH /short/sd34/ap5514/myapps/stringtie/1.3.4/stringtie

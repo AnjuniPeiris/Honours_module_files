@@ -1,0 +1,10 @@
+#%Module1.0#####################################################################
+source /opt/Modules/extensions/extensions.tcl
+proc ModulesHelp { } {
+        puts stderr "\tAdds nanopack bin directory to the path"
+}
+module-whatis    "nanopack"
+soft-prereq python3/3.5.2
+set nanopackversion 1.0
+prepend-path PATH /home/106/ap5514/myapps/nanopack/1.0/bin
+prepend-path PYTHONPATH /home/106/ap5514/myapps/nanopack/1.0/lib/python3.5/site-packages

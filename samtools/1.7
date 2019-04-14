@@ -1,0 +1,8 @@
+#%Module1.0#####################################################################
+source /opt/Modules/extensions/extensions.tcl
+proc ModulesHelp { } {
+        puts stderr "\tAdds samtools bin directory to the path"
+}
+module-whatis    "samtools"
+set samtoolsversion 1.7
+prepend-path PATH /home/106/ap5514/myapps/samtools/1.7/bin

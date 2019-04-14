@@ -1,0 +1,15 @@
+#%Module1.0#####################################################################
+source /opt/Modules/extensions/extensions.tcl
+proc ModulesHelp { } {
+        puts stderr "\tAdds tombo bin directory to the path"
+}
+module-whatis    "tombo"
+
+soft-prereq python3/3.5.2
+soft-prereq python3/3.5.2-matplotlib
+soft-prereq R/3.4.0
+
+set tomboversion 1.2.1
+prepend-path PATH /short/sd34/ap5514/myapps/tombo/1.4/bin/
+prepend-path PYTHONPATH /short/sd34/ap5514/myapps/tombo/1.4/lib/python3.5/site-packages
+

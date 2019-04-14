@@ -1,0 +1,9 @@
+#%Module1.0#####################################################################
+source /opt/Modules/extensions/extensions.tcl
+proc ModulesHelp { } {
+        puts stderr "\tAdds subread bin directory to the path"
+}
+module-whatis    "subread"
+
+set subreadversion 1.6.2
+prepend-path PATH /short/sd34/ap5514/myapps/subread/1.6.2/subread-1.6.2-Linux-x86_64/bin

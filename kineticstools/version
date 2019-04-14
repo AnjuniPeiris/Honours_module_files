@@ -1,0 +1,14 @@
+#%Module1.0#####################################################################
+source /opt/Modules/extensions/extensions.tcl
+proc ModulesHelp { } {
+        puts stderr "\tAdds kineticsTools bin directory to the path"
+}
+module-whatis    "kineticstools"
+
+soft-prereq python/2.7.6
+soft-prereq pbcore
+
+
+#set kineticsToolsversion 1.2.1 #no version yet
+prepend-path PATH /short/sd34/ap5514/myapps/kineticsTools/
+prepend-path PYTHONPATH /short/sd34/ap5514/myapps/kineticsTools/lib/python2.7/site-packages

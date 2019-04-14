@@ -1,0 +1,9 @@
+#%Module1.0#####################################################################
+source /opt/Modules/extensions/extensions.tcl
+proc ModulesHelp { } {
+        puts stderr "\tAdds gffread bin directory to the path"
+}
+module-whatis    "gffread"
+
+set gffreadversion 0.9.12
+prepend-path PATH /short/sd34/ap5514/myapps/gffread/0.9.12/gffread

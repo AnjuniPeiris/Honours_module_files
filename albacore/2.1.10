@@ -1,0 +1,10 @@
+#%Module1.0#####################################################################
+source /opt/Modules/extensions/extensions.tcl
+proc ModulesHelp { } {
+        puts stderr "\tAdds albacore bin directory to the path"
+}
+module-whatis    "albacore"
+soft-prereq python3/3.6.2
+set albacoreversion 2.1.10
+prepend-path PATH /home/106/ap5514/myapps/albacore/2.1.10/bin
+prepend-path PYTHONPATH /home/106/ap5514/myapps/albacore/2.1.10/lib/python3.6/site-packages

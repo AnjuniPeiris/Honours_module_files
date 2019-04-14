@@ -1,0 +1,10 @@
+#%Module1.0#####################################################################
+source /opt/Modules/extensions/extensions.tcl
+proc ModulesHelp { } {
+        puts stderr "\tAdds NanoPlot bin directory to the path"
+}
+module-whatis    "nanoplot"
+soft-prereq python3/3.5.2
+set nanoplotversion 1.0.0
+prepend-path PATH home/106/ap5514/myapps/nanoplot/1.0.0/bin
+prepend-path PYTHONPATH /home/106/ap5514/myapps/nanoplot/1.0.0/lib/python3.5/site-packages

@@ -1,0 +1,12 @@
+#%Module1.0#####################################################################
+source /opt/Modules/extensions/extensions.tcl
+proc ModulesHelp { } {
+        puts stderr "\tAdds smrtlink bin directory to the path"
+}
+module-whatis    "smrtlink"
+
+soft-prereq dot 
+
+set smrtlinkersion 5.1.0
+prepend-path PATH /short/sd34/ap5514/myapps/smrtlink/5.1.0/install/smrtlink-release_5.1.0.26412/bundles/smrttools/smrtcmds/bin
+#prepend-path PYTHONPATH /short/sd34/ap5514/myapps/kineticsTools/lib/python2.7/site-packages

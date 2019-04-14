@@ -1,0 +1,8 @@
+#%Module1.0#####################################################################
+source /opt/Modules/extensions/extensions.tcl
+proc ModulesHelp { } {
+        puts stderr "\tAdds bedtools directory to the path"
+}
+module-whatis    "bedtools"
+set bedtoolsversion 2.27.1
+prepend-path PATH /short/sd34/ap5514/myapps/bedtools/2.27.1/bin
